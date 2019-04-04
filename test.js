@@ -1,8 +1,8 @@
 // Complete the alternatingCharacters function below.
 function alternatingCharacters(s) {
     const item = s;
-    let newItem = item.split('');
-    let string = '';
+    let newItem = item.split("");
+    let string = "";
     let numberOfDeletions = 0;
     if (newItem.length > 0) {
         let prev = newItem[0];
@@ -16,13 +16,11 @@ function alternatingCharacters(s) {
                 numberOfDeletions += 1;
             }
         };
-
         console.log(`New Item ===> ${string}`);
         console.log(`${numberOfDeletions} deletions`);
     };
-
     return numberOfDeletions;
 }
 
-let string = "ABBABA"; // input string
-alternatingCharacters(string);
+const s = "ABBAAABAABBBABA"; // input string
+alternatingCharacters(s);
