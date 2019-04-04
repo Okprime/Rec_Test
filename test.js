@@ -23,3 +23,6 @@ function alternatingCharacters(s) {
 
     return numberOfDeletions;
 }
+
+let string = "ABBABA"; // input string
+alternatingCharacters(string);
